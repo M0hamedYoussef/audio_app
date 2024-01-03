@@ -1,6 +1,6 @@
-import 'package:audio_app/controller/art_con.dart';
-import 'package:audio_app/controller/audio_con.dart';
-import 'package:audio_app/core/const/decoration.dart';
+import 'package:audio/controller/art_con.dart';
+import 'package:audio/controller/audio_con.dart';
+import 'package:audio/core/const/decoration.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:on_audio_query/on_audio_query.dart';
@@ -11,26 +11,31 @@ class AudioImage extends GetView<AudioCon> {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<ArtWork>(
-      builder: (con) {
+      builder: (_) {
         if (controller.index == data.length) {
           controller.index--;
         }
-        return Positioned(
-          left: 0,
-          top: AppDecoration().screenHeight * 0.05,
-          right: AppDecoration().screenWidth * 0.02,
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(19, 80, 8, 15),
-            child: QueryArtworkWidget(
-              id: data[controller.index].id,
-              type: ArtworkType.AUDIO,
-              size: 1000,
-              artworkHeight: AppDecoration().screenWidth * 1,
-              artworkWidth: AppDecoration().screenWidth * 0.8,
-              artworkFit: BoxFit.contain,
-              artworkQuality: FilterQuality.high,
-              quality: 100,
-              nullArtworkWidget: const SizedBox(),
+        return Center(
+          child: Container(
+            constraints: BoxConstraints(
+              maxHeight: AppDecoration().screenHeight * 0.5,
+              maxWidth: AppDecoration().screenWidth * 0.95,
+            ),
+            child: Padding(
+              padding:
+                  const EdgeInsets.only(bottom: 175, top: 8, left: 8, right: 8),
+              child: QueryArtworkWidget(
+                id: data[controller.index].id,
+                type: ArtworkType.AUDIO,
+                size: 1000,
+                artworkBorder: BorderRadius.zero,
+                artworkQuality: FilterQuality.high,
+                artworkHeight: AppDecoration().screenHeight,
+                artworkWidth: AppDecoration().screenWidth,
+                artworkFit: BoxFit.fitWidth,
+                quality: 100,
+                nullArtworkWidget: const SizedBox(),
+              ),
             ),
           ),
         );

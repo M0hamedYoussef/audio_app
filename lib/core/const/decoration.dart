@@ -1,4 +1,4 @@
-import 'package:audio_app/core/const/colors.dart';
+import 'package:audio/core/const/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,4 +1,4 @@
-import 'package:audio_app/core/const/decoration.dart';
+import 'package:audio/core/const/decoration.dart';
 import 'package:blur/blur.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +10,7 @@ class BgBlur extends StatelessWidget {
     return Blur(
       blurColor: Colors.transparent,
       blur: 3.5,
-      colorOpacity: 0.1,
+      colorOpacity: 0.12,
       child: SizedBox(
         height: AppDecoration().screenHeight,
         width: AppDecoration().screenWidth,

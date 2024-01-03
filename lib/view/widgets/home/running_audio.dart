@@ -1,4 +1,4 @@
-import 'package:audio_app/controller/art_con.dart';
+import 'package:audio/controller/art_con.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
