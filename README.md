@@ -1,20 +1,11 @@
 # audio_app
-<<<<<<< HEAD
+Audio Player Features :
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-Audio Player
->>>>>>> c7896971da7bb901022ae5c2212d5cc62a8a53fe
+1-List All Audio Files
+2-Instant Search
+3-Simple Design
+4-Dark Mode 
+5-Show Audio Details And Delete
+6-Loop Mode
+7-Shuffle Mode
+8-Share Audio File
